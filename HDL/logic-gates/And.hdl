@@ -7,5 +7,6 @@ CHIP And {
     OUT out;
     
     PARTS:
-    if (a and b) out = 1, else out = 0
+    Nand(a=a,b=b,out=nand);
+    Not(in=nand,out=out);
 }
