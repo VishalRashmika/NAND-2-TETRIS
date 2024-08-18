@@ -12,3 +12,14 @@ Building logic gates using nand gate
 | `XOR`                    | `MUX16`           | DMUX4WAY           |
 | `MUX`                    |                 | DMUX8WAY           | 
 | `DMUX`                   |                 |                    |
+
+## Project 02
+Building adders and an ALU
+
+| Components |
+|:---------------------- |
+| `Half Adder`                  |
+| `Full Adder`                  |
+| `16 bit adder`                   |
+| `16 bit incrementer`                  |
+| ALU                  |
