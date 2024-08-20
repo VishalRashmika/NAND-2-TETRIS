@@ -58,7 +58,17 @@ CHIP ALU {
         Add16(a=outx, b=outy, out=outadd16);
         Mux16(a=outand16, b=outadd16, sel=f, out=fout);
 
-        // no flag
-        Not16(in=fout, out=outnot16);
-        Mux16(a=fout, b=outnot16, sel=no, out=out);
+        // // no flag
+        // Not16(in=fout, out=outnot16);
+        // Mux16(a=fout, b=outnot16, sel=no, out=finout);
+
+        // ng flag
+        Not16(in=fout, out=outnot16fin);
+        Mux16(a=fout, b=outnot16fin, sel=no, out=out,out[0..7]=zr1,out[8..15]=zr2,out[15]=ng);
+
+        // zr flag
+        Or8Way(in=zr1, out=or8way1);
+        Or8Way(in=zr2, out=or8way2);
+        Or(a=or8way1, b=or8way2, out=outor);
+        Not(in=outor, out=zr);
 }
