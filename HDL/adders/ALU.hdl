@@ -44,19 +44,19 @@ CHIP ALU {
         // zx flag
         Mux16(a=x, b=false, sel=zx, out=out1);
         // nx flag
-        Not16(in=x, out=notx16);
+        Not16(in=out1, out=notx16);
         Mux16(a=out1, b=notx16, sel=nx, out=outx);
 
         // zy flag
         Mux16(a=y, b=false, sel=zy, out=out3);
         // ny flag
-        Not16(in=y, out=noty16);
+        Not16(in=out3, out=noty16);
         Mux16(a=out3, b=noty16, sel=ny, out=outy);
 
         // f flag
         And16(a=outx, b=outy, out=outand16);
-        Add16(a=outx, b=outy, out=outor16);
-        Mux16(a=outand16, b=outor16, sel=f, out=fout);
+        Add16(a=outx, b=outy, out=outadd16);
+        Mux16(a=outand16, b=outadd16, sel=f, out=fout);
 
         // no flag
         Not16(in=fout, out=outnot16);
