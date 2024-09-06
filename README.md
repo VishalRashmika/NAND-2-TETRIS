@@ -9,8 +9,8 @@ Building logic gates using nand gate
 | `NOT`                  | `NOT16`         | `OR8WAY`           |
 | `AND`                  | `AND16`         | `MUX4WAY16`        |
 | `OR`                   | `OR16`          | `MUX8WAY16`        |
-| `XOR`                  | `MUX16`         | DMUX4WAY           |
-| `MUX`                  |                 | DMUX8WAY           | 
+| `XOR`                  | `MUX16`         | `DMUX4WAY`         |
+| `MUX`                  |                 | `DMUX8WAY`         | 
 | `DMUX`                 |                 |                    |
 
 ## Project 02
