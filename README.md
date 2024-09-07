@@ -38,4 +38,4 @@ Building memory
 | `Ram512`         |
 | `Ram4k`         |
 | `Ram16k`         |
-| PC  s                |
+| PC                  |
