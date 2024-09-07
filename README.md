@@ -23,3 +23,19 @@ Building adders and an ALU
 | `16 bit adder`         |
 | `16 bit incrementer`   |
 | `ALU`                  |
+
+
+
+## Project 03
+Building memory
+
+| Components             |
+|:---------------------- |
+| Bit           |
+| Register           |
+| Ram8         |
+| Ram64         |
+| Ram512         |
+| Ram4k         |
+| Ram16k         |
+| PC                  |
