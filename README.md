@@ -31,11 +31,11 @@ Building memory
 
 | Components             |
 |:---------------------- |
-| Bit           |
-| Register           |
-| Ram8         |
-| Ram64         |
-| Ram512         |
-| Ram4k         |
-| Ram16k         |
-| PC                  |
+| `Bit`           |
+| `Register`           |
+| `Ram8`         |
+| `Ram64`         |
+| `Ram512`         |
+| `Ram4k`         |
+| `Ram16k`         |
+| PC  s                |
